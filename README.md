@@ -22,7 +22,7 @@ pod 'YCDB'
 
 ## Author
 
-952303557@qq.com, 952303557@qq.com
+Liujf, QQ = 952303557
 
 ## License
 

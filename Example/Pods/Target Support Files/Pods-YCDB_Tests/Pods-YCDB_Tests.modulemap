@@ -1,0 +1,6 @@
+framework module Pods_YCDB_Tests {
+  umbrella header "Pods-YCDB_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

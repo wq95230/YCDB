@@ -1,0 +1,6 @@
+framework module YCDB {
+  umbrella header "YCDB-umbrella.h"
+
+  export *
+  module * { export * }
+}
