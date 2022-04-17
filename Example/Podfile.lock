@@ -5,7 +5,10 @@ PODS:
     - SQLiteRepairKit (~> 1.2.0)
     - WCDBOptimizedSQLCipher (~> 1.2.0)
   - WCDBOptimizedSQLCipher (1.2.1)
-  - YCDB (0.1):
+  - YCDB (0.2):
+    - WCDB
+    - YCDB/Database (= 0.2)
+  - YCDB/Database (0.2):
     - WCDB
 
 DEPENDENCIES:
@@ -25,7 +28,7 @@ SPEC CHECKSUMS:
   SQLiteRepairKit: 35aaae5a8838adb85f5b1eb4d796055be6060a4b
   WCDB: 8e90babdeb7784c569353a4bd22a66c0a175a882
   WCDBOptimizedSQLCipher: baf44493b0c7a3d49e97bc5b64a3856f6428ddd1
-  YCDB: caa4668722e3749c6b9b7dfb19f51a518f1b57bc
+  YCDB: 25a8f7242ea9e032f5976d0d3174c6850f3d3da7
 
 PODFILE CHECKSUM: 4d7e2a130124d63ed7b746127d82d9ff8ceab262
 

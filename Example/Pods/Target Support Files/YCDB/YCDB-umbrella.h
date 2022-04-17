@@ -10,9 +10,9 @@
 #endif
 #endif
 
+#import "DBManager.h"
 #import "AGDatabase+Sqlite.h"
 #import "AGDatabase.h"
-#import "DBManager.h"
 
 FOUNDATION_EXPORT double YCDBVersionNumber;
 FOUNDATION_EXPORT const unsigned char YCDBVersionString[];
