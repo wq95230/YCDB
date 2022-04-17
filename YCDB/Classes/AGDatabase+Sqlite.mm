@@ -1,16 +1,16 @@
 //
-//  DBManager+Sqlite.m
-//  OneCarBeauty
+//  AGDatabase+Sqlite.m
+//  BaseDemo
 //
-//  Created by 刘剑锋 on 2022/3/23.
+//  Created by 刘剑锋 on 2022/4/17.
 //
 
-#import "DBManager+Sqlite.h"
+#import "AGDatabase+Sqlite.h"
 
-@implementation DBManager (Sqlite)
+@implementation AGDatabase (Sqlite)
 
 static dispatch_once_t _onceToken;
-static DBManager *_manager = nil;
+static AGDatabase *_manager = nil;
 
 + (instancetype)shareManager
 {
@@ -22,6 +22,7 @@ static DBManager *_manager = nil;
     return _manager;
 }
 
+
 //创建数据库
 - (BOOL)creatDatabase
 {
@@ -29,8 +30,8 @@ static DBManager *_manager = nil;
     NSString *obectid = @"userid"; //设置用户id作为路径
     NSString *path = [NSString stringWithFormat:@"MerchantDB/%@.sqlite",obectid];
     NSString *dbPath = [documentPath stringByAppendingString:path];
-//    NSLog(@"数据库路径:\n%@\n",dbPath)
-
+//    NSLog(@"数据库路径:\n%@\n",dbPath);
+    self.dbPath = dbPath;
     self.database = [[WCTDatabase alloc] initWithPath:dbPath];
 //    self.database.tag = 0;
     if ([self.database canOpen])
@@ -320,7 +321,7 @@ static DBManager *_manager = nil;
 */
 
 /// 数据清空
-+ (void)disDestory
++ (void)destory
 {
     _onceToken = 0;
     _manager = nil;
